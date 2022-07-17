@@ -1,27 +1,27 @@
 package JavaStart.ObjectPrograming1.GeometricFigures;
 
 public class Point {
-    private int pointX;
-    private int pointY;
+    private double pointX;
+    private double pointY;
 
-    public Point(int pointX, int pointY) {
+    public Point(double pointX, double pointY) {
         this.pointX = pointX;
         this.pointY = pointY;
     }
 
-    public int getPointX() {
+    public double getPointX() {
         return pointX;
     }
 
-    public void setPointX(int pointX) {
+    public void setPointX(double pointX) {
         this.pointX = pointX;
     }
 
-    public int getPointY() {
+    public double getPointY() {
         return pointY;
     }
 
-    public void setPointY(int pointY) {
+    public void setPointY(double pointY) {
         this.pointY = pointY;
     }
 }
