@@ -18,11 +18,12 @@ public class Playlist {
         this.songsList = songsList;
     }
 
-    public static int playlistLength (Song...songs){
+    public static String playlistLength (Song...songs){
         int length = 0;
-        for(int i = 0; i < songs.length; i++){
-            length += songs[i].getLength();
+        for (Song song : songs) {
+            length += song.getLength();
         }
-        return length;
+        TimeConverter.timeConverter(length);
+        return Integer.toString(length);
     }
 }
