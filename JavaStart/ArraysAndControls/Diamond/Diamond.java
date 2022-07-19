@@ -8,11 +8,11 @@ public class Diamond {
         System.out.println("Z ilu gwiazdek ma składać się bok rombu");
         int stars = scanner.nextInt();
 
-        for (int i = stars; i > 0 ; i--){
-            for(int x = i ; x > 0 ; x--){
+        for (int i = stars; i > 0; i--) {
+            for (int x = i; x > 0; x--) {
                 System.out.print(" ");
             }
-            for (int y = stars; y > 0; y--){
+            for (int y = stars; y > 0; y--) {
                 System.out.print("*");
             }
             System.out.println("");
