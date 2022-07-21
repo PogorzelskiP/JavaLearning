@@ -1,10 +1,11 @@
 package JavaStart.ArraysAndControls.Controler;
 
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+
 public class TicketMachine {
     public static Passenger buyTicket(Passenger passenger, int validityTime) {
-        LocalTime localTime = LocalTime.now();
-        Ticket ticket = new Ticket(localTime, validityTime);
+        Ticket ticket = new Ticket(validityTime);
         return new Passenger(passenger.getName(), passenger.getSurname(), ticket);
     }
 }
